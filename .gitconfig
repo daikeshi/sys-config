@@ -1,0 +1,37 @@
+[push]
+    default = nothing
+[user]
+    name = Keshi Dai
+    email = keshi.dai@intentmedia.com
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    lg = log --oneline
+    sh = show --pretty="format:" --name-only
+    ignore = update-index --assume-unchanged
+    unignore = update-index --no-assume-unchanged
+    setup = branch --set-upstream
+[core]
+    editor = /usr/bin/vim
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+    ui = auto
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[format]
+    pretty = format:"%h %C(yellow)%ci%Creset %Cgreen%an%Creset | %s"
+[branch]
+    # always setup 'git pull' to rebase instead of merge
+    autosetuprebase = always
+[push]
+    default = upstream
+
