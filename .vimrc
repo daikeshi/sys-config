@@ -24,8 +24,8 @@ syntax on
 " set autochdir
 set backspace=indent,eol,start
 set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
+set backupdir=$HOME/.vim/backup
+set directory=$HOME/.vim/tmp
 set noerrorbells
 
 " for text formatting/layout
@@ -59,7 +59,7 @@ let g:neocomplcache_enable_at_startup=1
 
 " for fuzzy_finder_textmate
 "map <leader>t :FuzzyFinderTextMate<CR>
-"let g:fuzzy_roots='~/Projects'
+"let g:fuzzy_roots='$HOME/Projects'
 "let g:fuzzy_ceiling=1000
 "let g:fuzzy_ignore=''
 "let g:fuzzy_matching_limit=200
