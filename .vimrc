@@ -36,7 +36,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 " set startup directory
-cd ~/Projects/
+cd $HOME/Projects
 
 " set font size to 12
 set guifont=Monaco:h12
