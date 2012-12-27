@@ -14,6 +14,7 @@ set sw=4 sts=4 et
 " set shiftwidth=4
 " set spell
 set number
+set ruler
 
 " for general
 set smartindent
