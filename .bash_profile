@@ -3,19 +3,14 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 export JAVA_HOME="/Library/Java/Home"
-export HADOOP_HOME=/Users/keshi.dai/Lib/hadoop
+export HADOOP_HOME=$HOME/Lib/hadoop
 export PATH="$JAVA_HOME/bin:/usr/local/mysql/bin:$PATH"
-export PATH=/Users/keshi.dai/Lib/pig/bin:$PATH
+export PATH=$HOME/Lib/pig/bin:$PATH
 export PATH=$HADOOP_HOME/bin:$PATH
 
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 export JAVA_OPTS="-XX:MaxPermSize=128m -Xmx1024m"
-
-# Setting PATH for Python 2.7
-# The original version is saved in .bash_profile.pysave
-# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-# export PATH
 
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
@@ -43,11 +38,7 @@ function jstest() {
   ant -Dargs="$1" -f tags/build/build.xml start-and-run-all
 }
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-# export PATH
-export PATH=/Users/keshi.dai/Projects/data-analysis/bin:$PATH
+export PATH=$HOME/Projects/data-analysis/bin:$PATH
 
 # Show current git branch
 function parse_git_branch () {
