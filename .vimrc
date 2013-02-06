@@ -53,7 +53,7 @@ nmap <silent> <A-C-Down> :wincmd j<CR>
 nmap <silent> <A-C-Left> :wincmd h<CR>
 nmap <silent> <A-C-Right> :wincmd l<CR>
 
-let g:neocomplcache_enable_at_startup=1
+let g:neocomplcache_enable_at_startup=0
 
 " for rgrep
 " set grepprg=grep\ -nrI\ --exclude-dir=target\ --exclude-dir=tmp\ --exclude-dir=log\ --exclude="*.min.js"\ --exclude="*.log"\ $*\ /dev/null
@@ -64,3 +64,11 @@ let g:neocomplcache_enable_at_startup=1
 "let g:fuzzy_ceiling=1000
 "let g:fuzzy_ignore=''
 "let g:fuzzy_matching_limit=200
+
+" for clojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
+" this should only be necessary if you don't have the ng client in your PATH
+" let vimclojure#NailgunClient = "/path/to/your/ng"
+let vimclojure#WantNailgun = 1
+

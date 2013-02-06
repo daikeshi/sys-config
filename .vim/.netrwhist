@@ -1,4 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/daikeshi/Repository/Dev/EclipseWorkspace/scoredist'
-let g:netrw_dirhist_2='/Users/keshi.dai/Projects/hadoop-1.0.3/conf'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_3='/Users/daikeshi/Projects/cascalog/src'

@@ -65,7 +65,5 @@ function respoof() {
     ant -f $CODE_DIR/adServer/build/build.xml concatenate && spoof_ads on
 }
 
-
-
-
-
+# for vim clojure nailgun server
+export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
