@@ -5,7 +5,7 @@ fi
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 export JAVA_HOME="/Library/Java/Home"
 export JAVA_OPTS="-XX:MaxPermSize=128m -Xmx1024m"
-export HADOOP_HOME=$HOME/Lib/hadoop
+export HADOOP_HOME=$HOME/Projects/code/conf/hadoop-0.20.2-CDH3B4
 export PATH="$JAVA_HOME/bin:/usr/local/mysql/bin:$PATH"
 export PATH=$HOME/Lib/pig/bin:$PATH
 export PATH=$HADOOP_HOME/bin:$PATH
@@ -35,7 +35,7 @@ eval "$(rbenv init -)"
 ### Python
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 source ~/.virtual_envs/system/bin/activate
-alias ipy='ipython qtconsole --pylab=inline'
+alias ipy='ipython qtconsole --pylab=inline &'
 
 ### IM Wowrk Related
 export CODE_DIR=$HOME/Projects/code
