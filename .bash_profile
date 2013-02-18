@@ -35,17 +35,17 @@ eval "$(rbenv init -)"
 ### Python
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 source ~/.virtual_envs/system/bin/activate
-alias ipy='ipython qtconsole --pylab=inline &'
+alias ipy='ipython qtconsole --pylab=inline --colors=linux --ConsoleWidget.font_size=12  &'
 
 ### IM Wowrk Related
 export CODE_DIR=$HOME/Projects/code
 export PATH=$HOME/Projects/data-analysis/bin:$PATH
 
-#S3
+### S3
 export S3=s3://intentmedia-hawk-output/keshi
 alias s3go='bin/push_to_s3.sh s3://intentmedia-hawk-output/keshi/local-jars'
 
-#Command Alias
+### Command Alias
 alias ll='ls -lah'
 alias be='bundle exec'
 alias ss='bundle exec trinidad'
@@ -65,5 +65,5 @@ function respoof() {
     ant -f $CODE_DIR/adServer/build/build.xml concatenate && spoof_ads on
 }
 
-# for vim clojure nailgun server
+### vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
