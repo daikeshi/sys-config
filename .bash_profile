@@ -37,33 +37,13 @@ eval "$(rbenv init -)"
 source ~/.virtual_envs/system/bin/activate
 alias ipy='ipython qtconsole --pylab=inline --colors=linux --ConsoleWidget.font_size=12  &'
 
-### IM Wowrk Related
-export CODE_DIR=$HOME/Projects/code
-export PATH=$HOME/Projects/data-analysis/bin:$PATH
-
-### S3
-export S3=s3://intentmedia-hawk-output/keshi
-alias s3go='bin/push_to_s3.sh s3://intentmedia-hawk-output/keshi/local-jars'
-
 ### Command Alias
 alias ll='ls -lah'
 alias be='bundle exec'
 alias ss='bundle exec trinidad'
 alias sc='bundle exec rails console'
 alias cuke='bundle exec cucumber'
-alias ge='cd $CODE_DIR/extranet'
-alias ga='cd $CODE_DIR/adServer'
 alias untar='tar -zxf'
-
-function jstest() {
-  ant -Dargs="$1" -f tags/build/build.xml start-and-run-all
-}
-function spoof_ads() {
-  sudo $CODE_DIR/conf/scripts/spoof_ads/spoof_ads $@
-}
-function respoof() {
-    ant -f $CODE_DIR/adServer/build/build.xml concatenate && spoof_ads on
-}
 
 ### vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
