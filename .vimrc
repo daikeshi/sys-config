@@ -47,12 +47,6 @@ augroup filetypedetect
   au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
 augroup END
 
-" move curse among spited windows
-nmap <silent> <A-C-Up> :wincmd k<CR>
-nmap <silent> <A-C-Down> :wincmd j<CR>
-nmap <silent> <A-C-Left> :wincmd h<CR>
-nmap <silent> <A-C-Right> :wincmd l<CR>
-
 let g:neocomplcache_enable_at_startup=0
 
 " for rgrep
@@ -72,3 +66,35 @@ let g:vimclojure#ParenRainbow = 1
 " let vimclojure#NailgunClient = "/path/to/your/ng"
 let vimclojure#WantNailgun = 1
 
+" for ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+""" KEY MAPPING
+" move curse among spited windows
+nmap <silent> <A-C-Up> :wincmd k<CR>
+nmap <silent> <A-C-Down> :wincmd j<CR>
+nmap <silent> <A-C-Left> :wincmd h<CR>
+nmap <silent> <A-C-Right> :wincmd l<CR>
+
+nmap \l :setlocal number!<CR>
+nmap \o :set paste!<CR>
+nmap j gj
+nmap k gk
+nmap <C-e> :e#<CR>
+nmap <C-n> :bnext<CR>
+nmap <C-p> :bprev<CR>
+map! ii <Esc>
+
+""" for Ctrl-P
+nmap ; :CtrlPBuffer<CR>
+nmap <C-f> :CtrlP 
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_switch_buffer = 0
+
+""" for NERDTree
+nmap \n :NERDTreeToggle<CR>
