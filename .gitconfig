@@ -33,3 +33,5 @@
 [push]
     default = upstream
 
+[merge]
+	tool = opendiff
