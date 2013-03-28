@@ -14,7 +14,7 @@
     unignore = update-index --no-assume-unchanged
     setup = branch --set-upstream
 [core]
-    editor = /usr/bin/vim
+    editor = /usr/bin/vi
 [color]
     branch = auto
     diff = auto
