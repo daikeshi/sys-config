@@ -98,3 +98,6 @@ let g:ctrlp_switch_buffer = 0
 
 """ for NERDTree
 nmap \n :NERDTreeToggle<CR>
+""" fire NERDTree on startup
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
