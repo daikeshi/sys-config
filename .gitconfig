@@ -1,6 +1,6 @@
 [user]
     name = Keshi Dai
-    email = keshi.dai@intentmedia.com
+    email = keshi.dai@gmail.com
 [alias]
     co = checkout
     br = branch
@@ -8,13 +8,13 @@
     st = status
     unstage = reset HEAD --
     last = log -1 HEAD
-    lg = log --oneline
+    lg = log --format=\"%Cgreen %h %C(yellow) %an %Creset| %s\" --graph
     sh = show --pretty="format:" --name-only
     ignore = update-index --assume-unchanged
     unignore = update-index --no-assume-unchanged
     setup = branch --set-upstream
 [core]
-    editor = /usr/bin/vi
+    editor = /usr/bin/vim
 [color]
     branch = auto
     diff = auto
