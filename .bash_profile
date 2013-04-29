@@ -44,6 +44,9 @@ alias ss='bundle exec trinidad'
 alias sc='bundle exec rails console'
 alias cuke='bundle exec cucumber'
 alias untar='tar -zxf'
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --daemon'
+alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t '
+alias ec='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c '
 
 ### vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
