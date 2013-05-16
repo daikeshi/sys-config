@@ -43,6 +43,8 @@ alias untar='tar -zxf'
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --daemon'
 alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t '
 alias ec='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c '
+alias mysql='/usr/local/mysql/bin/mysql'
+alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
 ### vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
