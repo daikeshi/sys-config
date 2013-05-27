@@ -3,12 +3,13 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-export JAVA_HOME="/Library/Java/Home"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 export JAVA_OPTS="-XX:MaxPermSize=128m -Xmx1024m"
 export PATH="$JAVA_HOME/bin:/usr/local/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export CPPFLAGS=-I/opt/X11/include
+export HADOOP_HOME=$HOME/Lib/hadoop-1.1.2
 
 ### SBT for Scala
 export SBT_OPTS='-Xms512m -Xmx1024m -XX:MaxPermSize=1024m'
