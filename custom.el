@@ -14,6 +14,8 @@
 
 ;; color skeme
 ;; (disable-theme 'zenburn)
+;; M-x package-install RET color-theme-sanityinc-tomorrow RETmo
+(require 'color-theme-sanityinc-tomorrow)
 (load-theme 'sanityinc-tomorrow-night t)
 
 (setq default-directory "~/Project")

@@ -34,4 +34,4 @@
     default = upstream
 
 [merge]
-	tool = opendiff
+    tool = opendiff
