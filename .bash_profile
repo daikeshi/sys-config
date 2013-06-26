@@ -49,3 +49,17 @@ alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
 ### vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
+
+### save path on cd
+function cd {
+    builtin cd $@
+    pwd > ~/.last_dir
+}
+
+### restore last saved path
+if [ -f ~/.last_dir ]
+    then cd `cat ~/.last_dir`
+fi
+
+### ebay stuff
+# alias jenkins='ssh jenkins@phx5qa01c-b8eb.stratus.phx.qa.ebay.com'
