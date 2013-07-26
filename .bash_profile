@@ -5,11 +5,12 @@ fi
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 export JAVA_OPTS="-XX:MaxPermSize=128m -Xmx1024m"
-export PATH="$JAVA_HOME/bin:/usr/local/bin:$PATH"
+export HADOOP_PREFIX=$HOME/Lib/hadoop-1.1.2
+export MYSQL_HOME=/usr/local/mysql
+export PATH="$MYSQL_HOME/bin:$JAVA_HOME/bin:/usr/local/bin:$HADOOP_PREFIX/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export CPPFLAGS=-I/opt/X11/include
-export HADOOP_HOME=$HOME/Lib/hadoop-1.1.2
 
 ### SBT for Scala
 export SBT_OPTS='-Xms512m -Xmx1024m -XX:MaxPermSize=1024m'
@@ -44,8 +45,6 @@ alias untar='tar -zxf'
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --daemon'
 alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t '
 alias ec='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c '
-alias mysql='/usr/local/mysql/bin/mysql'
-alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
 ### vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
@@ -62,4 +61,9 @@ if [ -f ~/.last_dir ]
 fi
 
 ### ebay stuff
-# alias jenkins='ssh jenkins@phx5qa01c-b8eb.stratus.phx.qa.ebay.com'
+alias batchprod='ssh b_merch@phx6b02c-18cc.stratus.phx.ebay.com'
+alias batchqa='ssh b_merch@phx5qa01c-fe51.stratus.phx.qa.ebay.com'
+ 
+alias cassandraqa1='ssh b_merch@phx7b02c-2000.stratus.phx.qa.ebay.com'
+alias cassandraqa2='ssh b_merch@phx5qa01c-0935.stratus.phx.qa.ebay.com'
+alias cassandraqa3='ssh b_merch@phx5qa01c-b0c8.stratus.phx.qa.ebay.com'
