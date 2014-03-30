@@ -3,9 +3,9 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export JAVA_OPTS="-XX:MaxPermSize=128m -Xmx1024m"
-export HADOOP_PREFIX=$HOME/Lib/hadoop-1.1.2
+export HADOOP_PREFIX=$HOME/Lib/hadoop-1.2.0
 export MYSQL_HOME=/usr/local/mysql
 export PATH="$MYSQL_HOME/bin:$JAVA_HOME/bin:/usr/local/bin:$HADOOP_PREFIX/bin:$PATH"
 export CLICOLOR=1
@@ -42,9 +42,10 @@ alias ss='bundle exec trinidad'
 alias sc='bundle exec rails console'
 alias cuke='bundle exec cucumber'
 alias untar='tar -zxf'
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --daemon'
-alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t '
+alias es='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --daemon'
+alias et='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t '
 alias ec='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c '
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 ### vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
@@ -61,9 +62,11 @@ if [ -f ~/.last_dir ]
 fi
 
 ### ebay stuff
+alias mvn3='mvn -s $HOME/.m2/default_settings.xml'
 alias batchprod='ssh b_merch@phx6b02c-18cc.stratus.phx.ebay.com'
 alias batchqa='ssh b_merch@phx5qa01c-fe51.stratus.phx.qa.ebay.com'
  
 alias cassandraqa1='ssh b_merch@phx7b02c-2000.stratus.phx.qa.ebay.com'
 alias cassandraqa2='ssh b_merch@phx5qa01c-0935.stratus.phx.qa.ebay.com'
 alias cassandraqa3='ssh b_merch@phx5qa01c-b0c8.stratus.phx.qa.ebay.com'
+
