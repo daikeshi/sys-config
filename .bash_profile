@@ -36,18 +36,17 @@ source ~/.virtual_envs/system/bin/activate
 alias ipy='ipython qtconsole --pylab=inline --colors=linux --ConsoleWidget.font_size=12  &'
 
 ### Command Alias
+### System
 alias ll='ls -lah'
-alias be='bundle exec'
-alias ss='bundle exec trinidad'
-alias sc='bundle exec rails console'
-alias cuke='bundle exec cucumber'
 alias untar='tar -zxf'
+
+### Emacs
 alias es='/Applications/Emacs.app/Contents/MacOS/Emacs -nw --daemon'
 alias et='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t '
 alias ec='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c '
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
-### vim clojure nailgun server
+### Vim clojure nailgun server
 export VIMCLOJURE_SERVER_JAR="$HOME/Lib/vimclojure/server-2.3.6.jar"
 
 ### save path on cd
@@ -60,4 +59,3 @@ function cd {
 if [ -f ~/.last_dir ]
     then cd `cat ~/.last_dir`
 fi
-
