@@ -61,12 +61,3 @@ if [ -f ~/.last_dir ]
     then cd `cat ~/.last_dir`
 fi
 
-### ebay stuff
-alias mvn3='mvn -s $HOME/.m2/default_settings.xml'
-alias batchprod='ssh b_merch@phx6b02c-18cc.stratus.phx.ebay.com'
-alias batchqa='ssh b_merch@phx5qa01c-fe51.stratus.phx.qa.ebay.com'
- 
-alias cassandraqa1='ssh b_merch@phx7b02c-2000.stratus.phx.qa.ebay.com'
-alias cassandraqa2='ssh b_merch@phx5qa01c-0935.stratus.phx.qa.ebay.com'
-alias cassandraqa3='ssh b_merch@phx5qa01c-b0c8.stratus.phx.qa.ebay.com'
-
