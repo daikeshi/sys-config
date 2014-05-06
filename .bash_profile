@@ -59,3 +59,16 @@ function cd {
 if [ -f ~/.last_dir ]
     then cd `cat ~/.last_dir`
 fi
+
+### AWS
+export AWS_DEFAULT_REGION=us-east-1
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+# For the Java SDK
+export AWS_SECRET_KEY=
+
+### AWS ELASTIC MAPREDUCE
+export ELASTIC_MAPREDUCE_KEY_PAIR=
+export ELASTIC_MAPREDUCE_ACCESS_ID=
+export ELASTIC_MAPREDUCE_PRIVATE_KEY=
+
