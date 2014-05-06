@@ -3,7 +3,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 alias vim='mvim -v'
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export JAVA_OPTS="-XX:MaxPermSize=128m -Xmx1024m"
 export HADOOP_PREFIX=$HOME/Lib/hadoop-1.2.0
 export MYSQL_HOME=/usr/local/mysql
