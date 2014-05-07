@@ -6,7 +6,6 @@ upgrade
 
 # Brewfile
 install openssl
-# a comment
 link --force openssl
 
 # Install GNU core utilities (those that come with OS X are outdated)
@@ -21,6 +20,12 @@ install wget --enable-iri
 # Install more recent versions of some OS X tools
 install macvim --override-system-vi
 install homebrew/dupes/grep
+
+# Install scala, sbt
+install scala
+install sbt
+
+install parallel
 
 # Remove outdated versions from the cellar
 cleanup
