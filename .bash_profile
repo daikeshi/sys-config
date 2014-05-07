@@ -13,7 +13,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export CPPFLAGS=-I/opt/X11/include
 
 ### SBT for Scala
-export SBT_OPTS='-Xms512m -Xmx1024m -XX:MaxPermSize=1024m'
+export SBT_OPTS='-Xms512m -Xmx1024m -XX:MaxPermSize=1024m -XX:+CMSClassUnloadingEnabled'
 
 ### Git
 alias diffs='diff --side-by-side --suppress-common-lines'
